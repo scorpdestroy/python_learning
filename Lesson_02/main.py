@@ -2,19 +2,93 @@ from flask import Flask
 
 app = Flask('app')
 
-@app.route('/author')
-def author():
-    return '''<html>
-<body>
+@app.route('/first_part')
+def first_part():
+    return '''<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Внутренняя таблица стилей</title>
+<style type="text/css">
+body {
+    background-color:Tomato;
+}
+h1{
+   color: blue;
+   font-family:verdana;
+}
+p{
+   font-size:70px;
+   color:blue;
+   text-align:center;
+}
+</style>
+</head>
+  <body> 
+    <p>Был</p>
+    <p><a href='/'>оглавление</a></p> 
+  </body>
+</html>
+'''
 
-<p>
-Возможно пример не будет работать должным образом, если ваш браузер не позволяет вставлять одну текстовую область в другую,
-т.к. наш редактор использует текстовую область для ввода исходного кода.
-</p>
+@app.route('/second_part')
+def second_part():
+    return '''<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Внутренняя таблица стилей</title>
+<style type="text/css">
+body {
+    background-color:Tomato;
+}
+h1{
+   color: blue;
+   font-family:verdana;
+}
+p{
+   font-size:70px;
+   color:LightBlue;
+   text-align:center;
+}
+</style>
+</head>
+  <body> 
+    <p>Жил</p>
+    <p><a href='/'>оглавление</a></p> 
+  </body>
+</html>
 
-<textarea rows="4" cols="25">
-На уроках HTML вы найдете исчерпывающий материал по языку разметки HTML,
-изучив который, вы сможете создавать HTML страницы и сделать свой собственный веб сайт. 
+'''
+
+@app.route('/third_part')
+def third_part():
+    return '''<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Внутренняя таблица стилей</title>
+<style type="text/css">
+body {
+    background-color:Tomato;
+}
+h1{
+   color: blue;
+   font-family:verdana;
+}
+p{
+   font-size:70px;
+   color:LightBlue;
+   text-align:center;
+}
+</style>
+</head>
+  <body> 
+    <p>Всплыл</p>
+    <p><a href='/'>оглавление</a></p> 
+  </body>
+</html>
+
 '''
 
 @app.route('/')
@@ -26,7 +100,7 @@ def index():
 <title>Внутренняя таблица стилей</title>
 <style type="text/css">
 body {
-    background-color:green;
+    background-color:Tomato;
 }
 h1{
    color: blue;
@@ -34,16 +108,16 @@ h1{
 }
 p{
    font-size:20px;
-   color:red;
+   color:LightBlue;
    text-align:center;
 }
 </style>
 </head>
   <body> 
-    <h1>Заголовок</h1>
-    <p>Текст первый</p>
-    <p>Текст второй</p>
-    <p><a href='/author'>автор</a></p> 
+    <h1>Оглавление</h1>
+    <p><a href='/first_part'>Первая глава</a></p>
+    <p><a href='/second_part'>Вторая глава</a></p>
+    <p><a href='/third_part'>Третья глава</a></p> 
   </body>
 </html>'''
 
