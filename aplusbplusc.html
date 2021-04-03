@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8273469192869221",
+        enable_page_level_ads: true
+      });
+    </script>
+
+    <title>Интерактивный учебник языка Python</title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png?9fcec7f"/>
+
+
+    
+	
+    <script type="text/javascript" src="/static/js/jquery.min.js?9fcec7f"></script>
+    <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js?9fcec7f"></script>
+
+    <script type="text/javascript" src="/static/js/ace-editor/ace.js?9fcec7f"></script>
+    <script type="text/javascript" src="/static/js/jquery.jsPlumb-1.6.4-min.js?9fcec7f"></script>
+    <script type="text/javascript" src="/static/js/pythontutor.js?9fcec7f"></script>
+    <script type="text/javascript" src="/static/js/visualizer.js?9fcec7f"></script>
+    <script type="text/javascript" src="/static/js/visualizer-page.js?9fcec7f"></script>
+
+    <script type="text/javascript" src="/static/js/brython/brython.js?9fcec7f"></script>
+    <script type="text/python3" src="/static/js/checker.py?9fcec7f"></script>
+    <script>
+$(function() {
+    brython({debug: 1});
+});
+    </script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      messageStyle: "none"
+    });
+    </script>
+    <script type="text/javascript"
+      src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/javascript" src="/static/js/handlebars-v4.0.5.js?9fcec7f"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css?9fcec7f">
+    <link rel="stylesheet" type="text/css" href="/static/font-awesome/css/font-awesome.min.css?9fcec7f">
+    <link rel="stylesheet" type="text/css" href="/static/css/pythontutor.css?9fcec7f">
+    <link rel="stylesheet" type="text/css" href="/static/css/visualizer.css?9fcec7f">
+    <link rel="stylesheet" type="text/css" href="/static/css/profile.css?9fcec7f">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- VK Like Button -->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?115"></script>
+    <script type="text/javascript">
+      VK.init({apiId: 4657603, onlyWidgets: true});
+    </script>
+    <!-- /VK Like Button -->
+
+    <script type="text/javascript">
+    window.pythontutor = {
+      user: ''
+    };
+
+    // Set up ID for anonymous user.
+    if (!localStorage.getItem('anonymousUserID')) {
+      localStorage.setItem('anonymousUserID', Math.random().toString(36).replace(/[^a-z]+/g, ''));
+    }
+    </script>
+
+	<link rel="stylesheet" type="text/css" href="/static/css/lesson.css?9fcec7f">
+	<link rel="stylesheet" type="text/css" href="/static/css/problem.css?9fcec7f">
+	<link rel="stylesheet" type="text/css" href="/static/css/pythontutor-sidebar.css?9fcec7f">
+
+	<script type="text/javascript" src="/static/js/lesson.js?9fcec7f"></script>
+
+	<script type="text/javascript">
+		window.lesson_id = '1';
+	</script>
+
+
+
+    <script type="text/javascript" src="/static/js/problem.js?9fcec7f"></script>
+
+    <script type="text/javascript">
+        var problem_name = 'aplusbplusc';
+        var problem_id = '1';
+    </script>
+
+
+</head>
+<body>
+  
+    <nav class="navbar-light navbar-full bg-faded navbar-fixed-top">
+	<div class="container collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+          <a class="navbar-brand" href="/">Питонтьютор</a>
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+          <a class="nav-link" style="color: black;" target="_blank" onclick='ga && ga("send", "event", "Pride", "Clicked"); return true;' href="https://vk.com/@alisa_neverova-vyzhit-i-zhit-dolgo-i-schastlivo">🌈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://vk.com/pythontutor" style="color: #305075;"><i class="fa fa-vk" aria-hidden="true" style="margin-right: 3px;"></i>Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://snakify.org/" style="color: red">English version</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/vpavlenko/web-2020">Веб-программирование</a>
+            </li>          
+</ul>
+          <div class="nav navbar-nav pull-xs-right">
+            <div class="nav-link">
+              
+                <a href="/accounts/login/?next=/lessons/inout_and_arithmetic_operations/problems/aplusbplusc/
+">Войти</a> или <a href="/accounts/register/?next=/lessons/inout_and_arithmetic_operations/problems/aplusbplusc/
+">зарегистрироваться</a>
+              
+            </div>
+          </div>
+      </div>
+      <button
+        class="navbar-toggler hidden-sm-up"
+        type="button"
+        data-toggle="collapse"
+        data-target="#exCollapsingNavbar2"
+        aria-controls="exCollapsingNavbar2"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+       &#9776;
+     </button>
+    </nav>
+  
+
+	<div class="container-fluid">
+		
+	<div class="row">
+		<div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 sidebar">
+			
+				<ul class="nav nav-sidebar hidden-xs hidden-sm">
+					
+						<li class="lesson ">
+							<a href="/lessons/inout_and_arithmetic_operations/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">1.</div>
+									<div class="lesson__item_title">Ввод и вывод данных</div>
+								</div>
+							</a>
+							
+								
+    <ul class="lesson_sections">
+        <li class="problems_link">
+            <a>Задачи</a>
+            <ul>
+                
+                    <li class=" problem-available"><a class="active" href="/lessons/inout_and_arithmetic_operations/problems/aplusbplusc/">Сумма трёх чисел</a></li>
+                
+                    <li class=" problem-available"><a href="/lessons/inout_and_arithmetic_operations/problems/rect_triangle_square/">Площадь прямоугольного треугольника</a></li>
+                
+                    <li class=" problem-available"><a href="/lessons/inout_and_arithmetic_operations/problems/apples/">Дележ яблок</a></li>
+                
+                    <li class=" problem-available"><a href="/lessons/inout_and_arithmetic_operations/problems/electronic_watch/">Электронные часы</a></li>
+                
+                    <li class=" problem-available"><a href="/lessons/inout_and_arithmetic_operations/problems/hello_harry/">Hello, Harry!</a></li>
+                
+                    <li class=" problem-available"><a href="/lessons/inout_and_arithmetic_operations/problems/next_and_previous/">Следующее и предыдущее</a></li>
+                
+                    <li class=" problem-available"><a href="/lessons/inout_and_arithmetic_operations/problems/desks/">Парты</a></li>
+                
+                    <li class=" problem-available"><a href="/lessons/inout_and_arithmetic_operations/problems/shoelace/">Шнурки</a></li>
+                
+            </ul>
+        </li>
+    </ul>
+
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/ifelse/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">2.</div>
+									<div class="lesson__item_title">Условия</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/int_and_float/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">3.</div>
+									<div class="lesson__item_title">Вычисления</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/for_loop/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">4.</div>
+									<div class="lesson__item_title">Цикл for</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/str/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">5.</div>
+									<div class="lesson__item_title">Строки</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/while/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">6.</div>
+									<div class="lesson__item_title">Цикл while</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/lists/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">7.</div>
+									<div class="lesson__item_title">Списки</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/functions/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">8.</div>
+									<div class="lesson__item_title">Функции и рекурсия</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/2d_arrays/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">9.</div>
+									<div class="lesson__item_title">Двумерные массивы</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/sets/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">10.</div>
+									<div class="lesson__item_title">Множества</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/dicts/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">11.</div>
+									<div class="lesson__item_title">Словари</div>
+								</div>
+							</a>
+							
+						</li>
+					
+				</ul>
+			
+		</div>
+		<div class="col-lg-7 col-md-6 col-lg-offset-2 col-md-offset-2 col-sm-11 col-sm-offset-1 col-xs-offset-1 main">
+			
+				
+<div class="row">
+    <div class="col-lg-10">
+        <h3 class="lesson_name"><button class="sidebar-toggle btn btn-secondary" style="padding: 2px 10px; margin-right: 10px; margin-bottom: 5px;"><i class="fa fa-angle-left fa-1x" aria-hidden="true"></i></button><a href="/lessons/inout_and_arithmetic_operations/">Занятие 1</a>. Ввод и вывод данных</h3>
+        <h3 class="problem_name">Задача &laquo;Сумма трёх чисел&raquo;</h3>
+        <hr>
+
+        <h4><small>Условие</small></h4>
+        Напишите программу, которая считывает три числа и выводит их сумму. Каждое число записано в отдельной строке.
+
+        <hr>
+        <p style="color: gray; font-size: small;">Во всех задачах считывайте входные данные через <code>input()</code> и выводите ответ через <code>print()</code>.
+        <p>
+
+        <hr>
+    </div>
+</div>
+
+    <div id="visualizer"></div>
+
+    <div class="submit_solution">
+        
+        <a href="/accounts/login/?next=/lessons/inout_and_arithmetic_operations/problems/aplusbplusc/
+">Войти</a> или <a href="/accounts/register/?next=/lessons/inout_and_arithmetic_operations/problems/aplusbplusc/
+">зарегистрироваться</a>, чтобы отправлять решения на проверку
+        
+    </div>
+
+    <div id="other_solutions"></div>
+
+    <h4 style="padding-top: 10px;"><small>Тесты</small></h4>
+    <table id="example_tests" class="table table-condensed">
+        <thead>
+            <th class="debug_me"></th>
+            <th>Входные данные</th>
+            <th>Правильный ответ</th>
+            <th class="test_output">Что вывела программа</th>
+            <th class="test_result">Результат</th>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 1</button></td>
+                <td><pre class="input">2
+3
+6</pre></td>
+                <td><pre class="output">11</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 2</button></td>
+                <td><pre class="input">0
+20
+300</pre></td>
+                <td><pre class="output">320</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 3</button></td>
+                <td><pre class="input">-5
+180
+-17</pre></td>
+                <td><pre class="output">158</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+        <div style="margin-top: 50px;">
+<!-- Pythontutor Bottom Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-8273469192869221"
+     data-ad-slot="2072967526"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div>
+
+				<div id='achievements-snack'></div>
+
+				
+			
+		</div>
+		<div class="hidden-sm hidden-xs" style="float: right; width: 300px; margin-top: 0px; margin-right: 20px;">
+<div style="padding-bottom: 40px;"><b><a href="tg://resolve?domain=thingsiread">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="30" style="padding-right: 5px;">
+Телеграм-канал создателя Питонтьютора</a></b></div>
+
+
+<div style="width: 300px; height: 350px; margin: 20px 0px 50px 0px;">
+
+<!--Интервью создателя Питонтьютора 🌚 
+<iframe width="300" height="315" src="https://www.youtube.com/embed/pdhxlmSZ3oY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--<iframe src="https://kkliip2.vercel.app/?username=" width="300" height="300"></iframe>-->
+<!--
+
+<div style="height:270px;width:270px;box-shadow:12px 12px 2px 1px rgba(255, 120, 60, .2);;border:2px solid orange;padding:30px;font-family:sans;font-size:20px">
+Читаете книги и хотите обсуждать их с людьми?
+    <a href="https://forms.gle/W3TRnbxydzaCmm687" target="_blank">Плиз пройдите опросик на 3 минуты</a>
+
+</div>
+-->
+
+<!--
+
+<div style="width: 300px;
+    height = 300px;
+    padding: 40px 10px;
+    text-align: center;
+    background: #33cccc;
+    border: 2px solid black;
+cursor: pointer;
+    color: white;" onclick="window.open('https://t.me/sparkread', '_blank')">
+    <img src='/static/open-book.png' width="90" height="90" alt="image error">
+    <h1>SparkRead</h1>
+    Найди свой книжный клуб
+    <a     
+style="font-size: 20px;
+    display: inline-block;
+    border: 3px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 300;
+    margin-top: 30px;">Подписывайся</a>
+
+</div>
+
+-->
+
+
+<div style="width: 300px;
+    height = 300px;
+    padding: 20px 10px;
+    text-align: center;
+    background: #fffff;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;" onclick="window.open('http://jobtutor.tilda.ws/?utm_source=pythontutor&utm_medium=banner', '_blank')">
+
+    <font face = "Tahoma">
+
+    <h2>Подаешься на стажировку?</h2>
+    <img src='/static/JobTutor.png' alt="image error">
+
+    <style>
+    .bottom-three {
+      margin-upper: 1cm;
+      margin-bottom: 0cm;
+    }
+    </style>
+
+    <center><a><p class="bottom-three">
+      Поможем составить резюме и подготовиться к собеседованию
+    </p></a></center>
+
+    <a 
+    style="font-size: 20px;
+    display: inline-block;
+    border: 3px solid #a7000d;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: #a7000d;
+    font-weight: 300;
+    margin-top: 30px;">Подать заявку</a>
+
+    </font><br />
+
+</div>
+
+
+</div>
+
+Реклама:
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pythontutor Top Skyscraper -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-8273469192869221"
+     data-ad-slot="3136188630"></ins>
+      
+      <div style="margin-top: 50px;" id="yandex_rtb_R-A-248092-1"></div>
+      <div style="margin-top: 50px;">
+<!-- Pythontutor Medium Rectangle -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8273469192869221"
+     data-ad-slot="6643602079"></ins>
+
+      </div>
+
+<div style="margin-top: 50px;">
+<!-- Pythontutor Bottom Skyscraper -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-8273469192869221"
+     data-ad-slot="4257698610"></ins>      
+     </div>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+      <!-- Yandex.RTB R-A-248092-1 -->
+      <script type="text/javascript">
+          (function(w, d, n, s, t) {
+              w[n] = w[n] || [];
+              w[n].push(function() {
+                  Ya.Context.AdvManager.render({
+                      blockId: "R-A-248092-1",
+                      renderTo: "yandex_rtb_R-A-248092-1",
+                      async: true
+                  });
+              });
+              t = d.getElementsByTagName("script")[0];
+              s = d.createElement("script");
+              s.type = "text/javascript";
+              s.src = "//an.yandex.ru/system/context.js";
+              s.async = true;
+              t.parentNode.insertBefore(s, t);
+          })(this, this.document, "yandexContextAsyncCallbacks");
+      </script>
+   
+    </div>
+	</div>
+
+
+		
+			<footer>
+        Разработка и поддержка учебника: <a href="https://t.me/thingsiread">Виталий Павленко</a>, Владимир Соломатин (2014), команда Pythontutor (2016)
+        <br>
+				Автор первоначального текста большинства уроков, задач и тестов: Д. П. Кириенко (см. <a href="http://informatics.mccme.ru/moodle/course/view.php?id=156">оригинальный курс</a>)
+				<br>
+				Идея учебника: В. М. Гуровиц
+				<br>
+				Разработчик визуализатора: <a href="http://www.pgbovine.net/">Philip Guo</a> (см. <a href="http://www.pythontutor.com">сайт визуализатора</a>)
+				<br>
+				Родилось в 2012
+				</p>
+
+				<div class="like-buttons">
+					<!-- VK Like Button -->
+					<div>
+						<div id="vk_like"></div>
+						<script type="text/javascript">
+						VK.Widgets.Like("vk_like", {type: "mini", height: 18});
+						</script>
+					</div>
+
+					<!-- Twitter Like Button -->
+					<div>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="vitalypavlenko">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div>
+
+					<!-- Facebook Like Button -->
+					<div>
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<script>
+						    $(document).ready(function() {
+						        $('.fb-like').attr("data-href", document.URL);
+						    });
+						</script>
+						<div class="fb-like" data-href="http://pythontutor.ru/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+					</div>
+				</div>
+			</footer>
+		
+	</div>
+</body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    window.yaParams = {
+        login: ''
+    };
+
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                window.yaCounter = w.yaCounter32952209 = new Ya.Metrika({
+                    id:32952209,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    params:window.yaParams
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+  <div>
+    <img src="https://mc.yandex.ru/watch/32952209" style="position:absolute; left:-9999px;" alt="" />
+  </div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69899403-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- /Google Analytics -->
+
+<script src='/static/js/bundle.js?9fcec7f'></script>
+</html>
